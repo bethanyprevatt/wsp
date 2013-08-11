@@ -1,4 +1,74 @@
-/* ---- LAYOUT ---- */
-/* ---- NAVIGATION ---- */
-/* ---- TYPOGRAPHY ---- */
-/* ---- MISC ---- */
+/* ---- SWATCH HEX CODE ---- 
+
+Red d01747
+Grey 707070
+Lt Tiffany dbf5f3
+Dk Tiffany 70bfb9
+
+*/
+
+/* ------------------------- MAIN CODE -------------------------------- */
+
+body {
+	color: #707070;
+	font: 100%/1.25 Helvetica, Arial, sans-serif;
+	max-width: 800px;
+	margin: 0 auto;
+	background-color: #dbf5f3;
+}
+
+#wrapper {
+	width: 100%;
+	background-color: #fff;
+	border-radius: 0px 0px 5px 5px;
+	-moz-border-radius: 0px 0px 5px 5px;
+	-moz-box-shadow: 2px 2px 2px #ccc;
+  	-webkit-box-shadow: 2px 2px 2px #ccc;
+  	box-shadow: 2px 2px 2px #ccc;
+  	overflow:hidden;
+  	padding: 10px;
+}
+
+h1 {
+	color: #d01747;
+	font-size: 1.7em;
+}
+
+h2 {
+	font-size: 1.2em;
+	color: #d01747;
+}
+
+h3 {
+	color: #70bfb9;
+	font-size: 1em;
+	margin: 0;
+	font-weight: normal;
+}
+
+strong {
+	color: #70bfb9;
+	font-weight: normal;
+	font-size: 1em;
+}
+
+/* ------------------------------- LINKS ------------------------------------ */
+
+a:link {
+	color:#707070;
+	text-decoration: none;
+}
+     
+a:visited {
+	color:#707070;
+	font-weight: bold;
+}
+
+a:active {
+	color:#707070;
+	font-weight: bold;
+}
+
+a:hover {
+	color:#d01747;
+}
