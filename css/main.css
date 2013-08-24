@@ -1,33 +1,27 @@
 /* ---- SWATCH HEX CODE ---- 
 
-Red d01747
-Grey 707070
-Lt Tiffany dbf5f3
-Dk Tiffany 70bfb9
+Grey 4e4e4e
+Tiffany cbeef2
+Dk Tiffany 63afae
 
 */
 
 /* ------------------------- MAIN CODE -------------------------------- */
 
 body {
-	color: #707070;
+	color: #4e4e4e;
 	font: 100%/1.25 Helvetica, Arial, sans-serif;
-	max-width: 800px;
+	max-width: 900px;
 	margin: 0 auto;
-	background-color: #dbf5f3;
+	background-color: #fff;
+	background: url(../images/backgroundmain.jpg)
 }
 
 #wrapper {
-	width: 100%;
-	background-color: #fff;
-	border-radius: 0px 0px 5px 5px;
-	-moz-border-radius: 0px 0px 5px 5px;
-	-moz-box-shadow: 2px 2px 2px #ccc;
-  	-webkit-box-shadow: 2px 2px 2px #ccc;
-  	box-shadow: 2px 2px 2px #ccc;
-  	overflow:hidden;
-  	padding: 10px;
-  	margin: 10px;
+	background: #fff;
+	width:100%;
+	margin: 0 auto;
+	overflow: hidden;
 }
 
 h1 {
@@ -53,6 +47,48 @@ strong {
 	font-size: 1em;
 }
 
+footer {
+	background-color: #cbeef2;
+	font-variant:small-caps;
+}
+
+/* ------------------------------- NAV -------------------------------------- */
+
+nav {
+	background-color: #cbeef2;
+	font-variant:small-caps;
+	color: #4e4e4e;
+}
+
+ul.navlist {
+	width: 100%;
+	margin: 0 auto;
+	background: #cbeef2;
+	list-style-type: none;
+	padding: 0;
+	overflow: hidden;
+}
+
+.navlist li {
+	width: 25%;
+	background: #cbeef2;
+	float: left;
+}
+
+.navlist li a {
+	text-decoration: none;
+	background: #cbeef2;
+	display: block;
+	line-height: 3.125em;
+	text-align: center;
+	color: #4e4e4e;
+}
+
+.navlist li a:hover {
+	color: #fff;
+	background: #cbeef2;
+}
+
 /* ------------------------------- LINKS ------------------------------------ */
 
 a:link {
@@ -72,4 +108,25 @@ a:active {
 
 a:hover {
 	color:#d01747;
+}
+
+
+/*---------------------------media queries---------------------------------*/
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+	#wrapper {background-color: #191919;}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767) {
+	#wrapper {background-color: #191919;}
+	.form_container {float:none; width: 100%;}
+	.membership_container {float: none; width: 100%;}
+}
+
+@media only screen and (max-width: 479px) {
+	#wrapper {background-color: #191919;}
+	nav {display: none;}
+	ul.navlist {display: none:}
+	.form_container {float:none; width: 100%;}
+	.membership_container {float: none; width: 100%;}
 }
